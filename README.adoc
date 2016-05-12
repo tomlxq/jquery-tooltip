@@ -6,5 +6,9 @@ Email: 21429503@qq.com
 This is a demonstration. include fancybox css, please take care!
 
 Example:
-./demo/demo.js
-[source,js]
+[source]
+----
+$("[class=toolImg]").tooltip();
+$("[title^=header\\=]").tooltip({type: "html"});
+$("[class^=toolTxt]").tooltip({type: "tooltip"})
+----
