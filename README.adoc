@@ -2,7 +2,9 @@
 = A simple tooltip plugin
 
 Author: tomLuo
+
 Email: 21429503@qq.com
+
 This is a demonstration. include fancybox css, please take care!
 
 Example:
