@@ -1,6 +1,5 @@
 = A simple tooltip plugin
 :image-width: 500
-:book-root:https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/
 
 Author: tomLuo
 
@@ -17,16 +16,16 @@ $("[class^=toolTxt]").tooltip({type: "tooltip"})
 ----
 [[single-image]]
 .single image
-image::{book-root}doc-image/single-image.jpg[single image, 500 , link="{book-root}doc-image/single-image.jpg"]
+image::https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/single-image.jpg[single image, 500 , link="https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/single-image.jpg"]
 
 [[single-image-with-title]]
 .single image with title
-image::{book-root}single-image-with-title.jpg[single image with title, 500 , link="{book-root}single-image-with-title.jpg"]
+image::https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/single-image-with-title.jpg[single image with title, 500 , link="https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/single-image-with-title.jpg"]
 
 [[only-text]]
 .only text
-image::{book-root}only-text.jpg[single image, 500 , link="{book-root}only-text.jpg"]
+image::https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/only-text.jpg[single image, 500 , link="https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/only-text.jpg"]
 
 [[text-with-title]]
 .text with title
-image::{book-root}text-with-title.jpg[single image, 500 , link="{book-root}text-with-title.jpg"]
+image::https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/text-with-title.jpg[single image, 500 , link="https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/text-with-title.jpg"]
