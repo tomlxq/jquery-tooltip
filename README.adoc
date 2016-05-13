@@ -1,5 +1,4 @@
-http://[[jquery_tooltip_plugin]]
-http://= A simple tooltip plugin
+= A simple tooltip plugin
 :image-width: 500
 :book-root:https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/
 
