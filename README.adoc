@@ -5,7 +5,7 @@ Author: tomLuo
 
 Email: 21429503@qq.com
 
-This is a demonstration. include fancybox css, please take care!
+This is a demonstration!
 
 Example:
 [source]
@@ -14,6 +14,7 @@ $("[class=toolImg]").tooltip();
 $("[title^=header\\=]").tooltip({type: "html"});
 $("[class^=toolTxt]").tooltip({type: "tooltip"})
 ----
+
 [[single-image]]
 .single image
 image::https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/single-image.jpg[single image, 500 , link="https://raw.githubusercontent.com/tomlxq/jquery-tooltip/master/doc_img/single-image.jpg"]
