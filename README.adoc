@@ -1,7 +1,7 @@
 [[jquery_tooltip_plugin]]
 = A simple tooltip plugin
 :image-width: 500
-:book-root:./..
+:book-root:..
 
 Author: tomLuo
 
