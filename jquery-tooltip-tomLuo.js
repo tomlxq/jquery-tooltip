@@ -99,9 +99,9 @@
             wrapCSS: '',
             // HTML templates
             tpl: {
-                wrap: '<div id="tooltip" class="fancybox-wrap" tabIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
-                image: '<img class="fancybox-image tooltip-img" src="{0}" alt="" />',
-                image_with_title: '<div class="fancybox-title fancybox-title-over-wrap"><div>{0}</div></div>',
+                wrap: '<div id="tooltip" class="tooltip-tom-wrap" tabIndex="-1"><div class="tooltip-tom-skin"><div class="tooltip-tom-outer"><div class="tooltip-tom-inner"></div></div></div></div>',
+                image: '<img class="tooltip-tom-image tooltip-img" src="{0}" alt="" />',
+                image_with_title: '<div class="tooltip-tom-title tooltip-tom-title-over-wrap"><div>{0}</div></div>',
                 html: "<div class='ui-tooltip'>{0}</div>",
                 html_title: '<div class="tooltip-title">{0}</div><div class="tooltip-content">{1}</div>'
 
@@ -118,7 +118,7 @@
             if (elem.attr('original-title') || typeof (elem.attr('title')) !== 'string') {
                 elem.attr('title', elem.attr('original-title') || '').removeAttr('original-title');
             }
-            tip.removeClass("fancybox-opened").addClass("fancybox-tmp");
+            tip.removeClass("tooltip-tom-opened").addClass("tooltip-tom-tmp");
             e.stopPropagation();
             return false;
         }, onMouseMove: function (e, opts) {
@@ -259,9 +259,9 @@
             if ($("#tooltip").length <= 0) {
                 $(opts.tpl.wrap).appendTo('body');
             }
-            var tip = $("#tooltip").addClass('fancybox-wrap fancybox-' + (isTouch ? 'mobile' : 'desktop') + ' fancybox-type-' + (type == "image" ? 'image' : 'inline') + ' fancybox-tmp '),
-                skinCss = tip.find(".fancybox-skin").css({"padding": "0px", "width": "auto", "height": "auto"}),
-                c = tip.find(".fancybox-inner").empty(),
+            var tip = $("#tooltip").addClass('tooltip-tom-wrap tooltip-tom-' + (isTouch ? 'mobile' : 'desktop') + ' tooltip-tom-type-' + (type == "image" ? 'image' : 'inline') + ' tooltip-tom-tmp '),
+                skinCss = tip.find(".tooltip-tom-skin").css({"padding": "0px", "width": "auto", "height": "auto"}),
+                c = tip.find(".tooltip-tom-inner").empty(),
                 elem = opts.target,  //当前触发元素
                 title;
             opts.content = tip;
@@ -288,7 +288,7 @@
                 if (title)$((opts.tpl.image_with_title).format(title)).appendTo(c);
                 skinCss.css({"padding": "14px", "width": "auto", "height": "auto"});
             }
-            tip.removeClass("fancybox-tmp").addClass("fancybox-opened").bind("click", function (e, ui) {
+            tip.removeClass("tooltip-tom-tmp").addClass("tooltip-tom-opened").bind("click", function (e, ui) {
                 T.onMouseOut(e, opts);
             }); //for pad device
         }

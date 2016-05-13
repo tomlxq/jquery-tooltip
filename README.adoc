@@ -14,3 +14,19 @@ $("[class=toolImg]").tooltip();
 $("[title^=header\\=]").tooltip({type: "html"});
 $("[class^=toolTxt]").tooltip({type: "tooltip"})
 ----
+
+[[single image]]
+.single image
+image::{book-root}/doc-image/single-image.jpg[single image, 500 , link="{book-root}/doc-image/single-image.jpg"]
+
+[[single image with title]]
+.single image with title
+image::{book-root}/doc-image/single-image-with-title.jpg[single image with title, 500 , link="{book-root}/doc-image/single-image-with-title.jpg"]
+
+[[only text]]
+.only text
+image::{book-root}/doc-image/only-text.jpg[single image, 500 , link="{book-root}/doc-image/only-text.jpg"]
+
+[[text with title]]
+.text with title
+image::{book-root}/doc-image/text-with-title.jpg[single image, 500 , link="{book-root}/doc-image/text-with-title.jpg"]
